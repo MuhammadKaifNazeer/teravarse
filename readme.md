@@ -21,7 +21,7 @@ This Todo app is a simple and intuitive task management tool designed to help yo
    <table>
         <tr>
             <td><img src="screenshots/filter-todo.png" alt="filter-todo" width="400"/></td>
-            <td><img src="screenshots/seacrh-todos.png" alt="seacrh-todo" width="400"/></td>
+            <td><img src="screenshots/search-todos.png" alt="seacrh-todo" width="400"/></td>
         </tr>
     </table>
 - **Local Storage:** Your tasks are stored locally, ensuring persistence between sessions.
