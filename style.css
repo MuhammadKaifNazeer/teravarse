@@ -51,6 +51,10 @@ nav .nav-link {
     background-color: var(--primary-color);
 }
 
+.btn{
+    background-color: var(--primary-color);
+}
+
 .main {
     margin-top: 6rem;
 }
