@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg container fixed-top border-bottom-1" >
+        <a class="navbar-brand logo" href="#top">Todo App</a>
+
+        <div>
+            <button class="btn btn-danger add-btn" data-toggle="modal" data-target="#addTodoModal">Add
+                Todo <i class="fa-solid fa-plus"></i>
+            </button>
+        </div>
+    </nav>
+    <!-- Todo Filter and Add Button -->
+    <div class="container main">
+        <div class="hero">
+            <h1> <span>Streamline</span> Your Day, <br class="heading-break-tag"> Empower Your <span>Productivity</span></h1>
+            <p>Welcome to our intuitive Todo App, where simplicity meets productivity. Seamlessly manage your tasks, set priorities, and achieve your goals with ease. Stay organized effortlessly and focus on what truly matters in your day. Start your journey towards increased efficiency and a clutter-free life – one task at a time</p>
+        </div>
+
+        <div class="row d-flex justify-content-between">
+            <div class="col-lg-6 col-md-4 col-sm-12 d-flex">
+                <div class="col-lg-6 col-sm-12">
+                    <select id="filter" class="form-control" onchange="filterTodos()">
+                        <option value="all">All</option>
+                        <option value="incomplete">Incomplete</option>
+                        <option value="completed">Completed</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-3 col-lg-3 ">
+                <div class="row search-bar ">
+                    <div class="col-12">
+                        <input type="text" id="search" class="form-control" placeholder="Search Todo"
+                            oninput="searchTodos()">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <hr>
+
+
+        <!-- Todos -->
+        <div class="row mt-3" id="todos">
+            <!-- Todo items will be displayed here -->
+        </div>
+    </div>
+
+    <!-- Add Todo Modal -->
+    <div class="modal fade" id="addTodoModal" tabindex="-1" role="dialog" aria-labelledby="addTodoModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addTodoModalLabel">Add Todo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="addTodoForm">
+                        <div class="form-group">
+                            <label for="title">Title:</label>
+                            <input type="text" class="form-control" id="title" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description:</label>
+                            <textarea class="form-control" id="description" rows="3" required></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger primary-btn" onclick="addTodo()">Add Todo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Todo Modal -->
+    <div class="modal fade" id="editTodoModal" tabindex="-1" role="dialog" aria-labelledby="editTodoModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editTodoModalLabel">Edit Todo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="editTodoForm">
+                        <div class="form-group">
+                            <label for="editTitle">Title:</label>
+                            <input type="text" class="form-control" id="editTitle" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="editDescription">Description:</label>
+                            <textarea class="form-control" id="editDescription" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" onclick="saveEdit()">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

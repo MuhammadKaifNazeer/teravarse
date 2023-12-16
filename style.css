@@ -1,0 +1,144 @@
+:root {
+    --primary-color: #FF0145;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.completed {
+    background-color: var(--primary-color);
+    color: white;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+}
+
+.logo {
+    color: var(--primary-color);
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.logo:hover {
+    color: var(--primary-color)
+}
+
+.logo:focus {
+    color: var(--primary-color)
+}
+
+nav .nav-link {
+    color: black;
+}
+
+.add-btn {
+    font-weight: 500;
+    background-color: var(--primary-color);
+}
+
+.main {
+    margin-top: 6rem;
+}
+
+.hero {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.hero h1 {
+    font-weight: bold;
+}
+
+.hero h1 span {
+    color: var(--primary-color);
+}
+
+.primary-btn {
+    background: var(--primary-color);
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ececec;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: red;
+}
+
+
+@media (max-width: 767px) {
+    .search-bar {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 333px) {
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 277px) {
+    .hero h1 {
+        font-size: 25px;
+    }
+
+    .hero p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 273px) {
+    .logo {
+        display: none;
+    }
+}
+
+@media (max-width: 425px) {
+    .heading-break-tag {
+        display: none;
+    }
+}
