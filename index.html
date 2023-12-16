@@ -14,21 +14,27 @@
 
     <!-- Navbar -->
 
-    <nav class="navbar navbar-expand-lg container fixed-top border-bottom-1" >
+    <nav class="navbar navbar-expand-lg container fixed-top border-bottom-1">
         <a class="navbar-brand logo" href="#top">Todo App</a>
 
-        <div>
+        <div>  
             <button class="btn btn-danger add-btn" data-toggle="modal" data-target="#addTodoModal">Add
                 Todo <i class="fa-solid fa-plus"></i>
             </button>
         </div>
     </nav>
-    <!-- Todo Filter and Add Button -->
+
+    <!-- Hero sectoin, Todo Filter and Search bar -->
     <div class="container main">
         <div class="hero">
-            <h1> <span>Streamline</span> Your Day, <br class="heading-break-tag"> Empower Your <span>Productivity</span></h1>
-            <p>Welcome to our intuitive Todo App, where simplicity meets productivity. Seamlessly manage your tasks, set priorities, and achieve your goals with ease. Stay organized effortlessly and focus on what truly matters in your day. Start your journey towards increased efficiency and a clutter-free life – one task at a time</p>
+            <h1> <span>Streamline</span> Your Day, <br class="heading-break-tag"> Empower Your <span>Productivity</span>
+            </h1>
+            <p>Welcome to our intuitive Todo App, where simplicity meets productivity. Seamlessly manage your tasks, set
+                priorities, and achieve your goals with ease. Stay organized effortlessly and focus on what truly
+                matters in your day. Start your journey towards increased efficiency and a clutter-free life – one task
+                at a time</p>
         </div>
+
 
         <div class="row d-flex justify-content-between">
             <div class="col-lg-6 col-md-4 col-sm-12 d-flex">
@@ -85,6 +91,14 @@
                     </form>
                 </div>
                 <div class="modal-footer">
+                    <div class="flex mt-2 mx-3 social-icon">
+                        <a href="https://muhammadkaifnazeer.netlify.app/" target="_blank" class="text-dark mr-3">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                        <a href="https://github.com/MuhammadKaifNazeer/todo-app" target="_blank" class="text-dark">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
                     <button type="button" class="btn btn-danger primary-btn" onclick="addTodo()">Add Todo</button>
                 </div>
             </div>
