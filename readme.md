@@ -17,8 +17,13 @@ This Todo app is a simple and intuitive task management tool designed to help yo
     </table>
 
 - **Complete Tasks:** Mark tasks as completed to track your progress.
-- **Filter tasks:** Use filters to view incomplete or completed tasks.
-- **Search tasks:** Search for specific tasks.
+- **Filter and Search tasks:** Use filters to view incomplete or completed tasks. Search for specific tasks.
+   <table>
+        <tr>
+            <td><img src="screenshots/filter-todo.png" alt="filter-todo" width="400"/></td>
+            <td><img src="screenshots/seacrh-todo.png" alt="seacrh-todo" width="400"/></td>
+        </tr>
+    </table>
 - **Local Storage:** Your tasks are stored locally, ensuring persistence between sessions.
 - **Responsive Design:** Access and manage your tasks seamlessly on different devices.
 
