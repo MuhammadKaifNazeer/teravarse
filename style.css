@@ -51,22 +51,15 @@ nav .nav-link {
     background-color: var(--primary-color);
 }
 
-.btn{
-    background-color: var(--primary-color);
-    transition: .5s;
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: var(--primary-color) !important;
+    transition: 0.5s;
+    border: none;
 }
 
-.btn:hover{
-    background-color: var(--primary-color);
-}
-
-.btn:focus{
-    background-color: var(--primary-color);
-}
-
-.btn:active{
-    background-color: var(--primary-color);
-}
 
 .main {
     margin-top: 6rem;
