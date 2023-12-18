@@ -1,10 +1,10 @@
 # Todo App
 
-![Todo App Screenshots](screenshots/todo-app.png)
+![Todo App Screenshots](screenshots/teravarse.png)
 
 ## About
 
-This Todo app is a simple and intuitive task management tool designed to help you stay organized and productive.
+Teravarse is a simple and intuitive task management tool designed to help you stay organized and productive.
 
 ## Features
 
@@ -31,4 +31,4 @@ This Todo app is a simple and intuitive task management tool designed to help yo
 
 1. Clone the repository.
    ```bash
-   git clone https://github.com/MuhammadKaifNazeer/todo-app.git
+   https://github.com/MuhammadKaifNazeer/teravarse.git
